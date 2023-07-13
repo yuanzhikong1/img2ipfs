@@ -63,7 +63,7 @@ $(()=>{
                 $('#file').val(null);
                 return false;
             } else if (parseInt(fileSize) >= parseInt(maxSize)) {
-                parent.alert('上传的文件不能超过' + maxSize / 1024 / 1024 + 'MB');
+                parent.alert('上传的文件不能超过' + maxSize / 6000 / 6000 + 'MB');
                 return false;
             } else {
                 document.querySelector('.container').classList.add('start')
